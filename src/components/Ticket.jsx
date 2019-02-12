@@ -1,14 +1,19 @@
 import React from "react";
-
-function Ticket(){
+import PropTypes from 'prop-types';
+function Ticket(props){
   return (
     <div>
-        <h3>3a</h3>
-      <h3>Thato and Haley</h3>
-      <p><em>Firebase entries not saving!</em></p>
+        <h3>{props.location} - {props.names}</h3>
+      <p><em>{props.issue}</em></p>
       <hr/>
     </div>
   );
 }
+
+Ticket.PropTypes = {
+  names: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  issue: PropTypes.string
+};
 
 export default Ticket;

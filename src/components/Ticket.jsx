@@ -4,9 +4,13 @@ import PropTypes from 'prop-types';
 function Ticket(props){
   return (
     <div>
-      <style global jsx>{`
+      <style jsx>{`
           div {
-            background-color: red;
+            width:40%;
+            margin: auto;
+            text-align:center;
+            background-color: grey;
+            color: white;
           }
         `}</style>
       <h3>{props.location} - {props.names}</h3>

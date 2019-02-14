@@ -24,7 +24,7 @@ class NewTicketControl extends React.Component {
         }
     return (
       <div>
-       <ConfirmationQuestions />
+      {currentlyVisibleContent}
       </div>
     );
   }

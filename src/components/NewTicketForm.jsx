@@ -18,7 +18,7 @@ function NewTicketForm(props){
 
   return (
     <div>
-        <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={handleNewTicketFormSubmission}>
         <input
           type='text'
           id='names'
